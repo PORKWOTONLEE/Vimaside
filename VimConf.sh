@@ -143,8 +143,10 @@ AptInstall ripgrep rg
 echo -e "    (3/3)[nodejs]\c"
 LocalInstallNodejs
 echo -e "  (2/2)[tagbar]"
-echo -e "    (1/1)[gtags]\c"
+echo -e "    (1/2)[gtags]\c"
 LocalInstallGtags
+echo -e "    (1/2)[ctags]\c"
+AptInstall universal-ctags
 echo -e "(3/5)[Vimrc]\c"
 VimrcConfig
 echo -e "(4/5)[Vim Plug Install]\c"
